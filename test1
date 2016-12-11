@@ -3,6 +3,16 @@ public class Box {
     double height;
     double depth;
 
+    //задать значения по дефолту
+
+    Box(){
+        width=10;
+        height=10;
+        depth=10;
+    }
+
+
+
     //рассчитать объем
     double volume(){
         return width*height*depth;
@@ -20,6 +30,9 @@ class BoxDemo4 {
         Box mybox1=new Box();
         Box mybox2=new Box();
         double vol;
+        
+        vol=mybox1.volume();
+        System.out.println("Объем пустого ящика= "+ vol);
 
         mybox1.setDim(10,20,15);
         mybox2.setDim(3,6,9);
